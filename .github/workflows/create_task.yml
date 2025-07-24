@@ -17,4 +17,6 @@ jobs:
           deno-version: 2.x
 
       - name: Run script
+        env:
+          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
         run: deno run change
