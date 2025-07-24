@@ -1,6 +1,7 @@
 on:
-  schedule:
+  - schedule:
     - cron: "18 02 * * *"
+  - workflow_dispatch
 
 jobs:
   create_task:
