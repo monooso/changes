@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "change": "deno run --allow-env --allow-net --allow-read main.ts"
+  },
+  "imports": {
+    "@doist/todoist-api-typescript": "npm:@doist/todoist-api-typescript@^5.0.2",
+    "@std/csv": "jsr:@std/csv@^1.0.6",
+    "@std/fs": "jsr:@std/fs@^1.0.19"
+  }
+}

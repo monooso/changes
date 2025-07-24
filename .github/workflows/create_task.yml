@@ -1,0 +1,19 @@
+on:
+  schedule:
+    - cron: "18 02 * * *"
+
+jobs:
+  create_task:
+    name: Create Todoist task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.x
+
+      - name: Run script
+        run: deno run change
